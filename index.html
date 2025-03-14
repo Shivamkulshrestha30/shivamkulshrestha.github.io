@@ -1,66 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivam Kulshrestha | Research Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #333; color: white; text-align: center; padding: 20px; }
-        section { padding: 20px; max-width: 900px; margin: auto; }
-        h2 { border-bottom: 2px solid #333; padding-bottom: 5px; }
-        ul { list-style-type: none; padding: 0; }
-        li { margin-bottom: 10px; }
-        footer { background: #333; color: white; text-align: center; padding: 10px; margin-top: 20px; }
-        a { color: #0073e6; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Shivam Kulshrestha</h1>
-        <p>Ph.D. Scholar | Cosmic Ray Researcher | Data Science Enthusiast</p>
-    </header>
+import React from "react";
 
-    <section>
-        <h2>About Me</h2>
-        <p>I am a Ph.D. student passionate about teaching and making complex scientific concepts accessible. My research focuses on <strong>cosmic ray muons and atmospheric effects</strong>, particularly high-energy cosmic ray interactions. I also develop <strong>advanced data acquisition systems</strong> using <strong>Raspberry Pi and Arduino</strong> and have expertise in <strong>Python and ROOT CERN</strong> for statistical data analysis.</p>
-    </section>
-
-    <section>
-        <h2>Research & Publications</h2>
-        <ul>
-            <li><strong>ISVHECRI 2024:</strong> Atmospheric effects through air showers at Agra (SciPost Proceedings)</li>
-            <li><strong>DAE BRNS HEP 2024:</strong> Cosmic Ray studies using a Portable Muon Telescope (Springer Proceedings)</li>
-            <li><strong>DAE Symposium 2024:</strong> Shower rates measured at DEASA, Agra (DAE Nuclear Symposium Proceedings)</li>
+const Portfolio = () => {
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+      <h1 className="text-4xl font-bold text-center mb-6">Shivam In a Nutshell</h1>
+      
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold">How to Reach Me</h2>
+        <p>📧 Email: <a href="mailto:shivamkulsh96@gmail.com" className="text-blue-600">shivamkulsh96@gmail.com</a></p>
+        <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/shivam-kulshrestha-4a6041109" className="text-blue-600">Shivam Kulshrestha</a></p>
+      </section>
+      
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold">About Me</h2>
+        <p>
+          I am a Ph.D. student with a passion for teaching and making complex scientific concepts accessible to all. 
+          My research focuses on <strong>cosmic ray muons and atmospheric effects</strong>, particularly exploring high-energy cosmic ray interactions. 
+          I develop <strong>advanced data acquisition systems</strong> using <strong>Raspberry Pi and Arduino</strong> for cosmic ray detection.
+        </p>
+      </section>
+      
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold">Conferences & Presentations</h2>
+        <ul className="list-disc pl-6">
+          <li><strong>22nd ISVECRI 2024 (Mexico)</strong> - *Preliminary atmospheric effects through air showers at Agra using DEASA*</li>
+          <li><strong>XXVI DAE BRNS HEP Symposium (BHU)</strong> - *Comparative Analysis of Cosmic Ray Intensity Variation at DEASA*</li>
+          <li><strong>3rd Indian Space Weather Conference (IIT Roorkee)</strong> - *Unveiling Seasonal Impacts on Cosmic Rays*</li>
         </ul>
-    </section>
-
-    <section>
-        <h2>Conferences & Presentations</h2>
-        <ul>
-            <li><strong>ISVECRI 2024 (Mexico):</strong> International Union of Pure and Applied Physics (IUPAP)</li>
-            <li><strong>XXVI DAE BRNS HEP Symposium (BHU):</strong> Department of Atomic Energy</li>
-            <li><strong>68th DAE Symposium in Nuclear Physics (IIT Roorkee)</strong></li>
+      </section>
+      
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold">Publications</h2>
+        <ul className="list-disc pl-6">
+          <li>Kulshrestha, S., & Bhatnagar, S. (2022). *Calibration and Weather Studies of DEASA Detectors.*</li>
+          <li>Bhatnagar, S., & Kulshrestha, S. (2024). *Shower Rates Measured at DEASA, Agra.*</li>
+          <li>Ahlers, M., et al. (2025). *Ideas and Requirements for the Global Cosmic-Ray Observatory (GCOS).*</li>
         </ul>
-    </section>
+      </section>
+      
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold">Teaching Assignments</h2>
+        <p><strong>Applied Physics I & II</strong> – Hon. Senior Instructor, Dayalbagh Technical College, Agra.</p>
+      </section>
+      
+      <section>
+        <h2 className="text-2xl font-semibold">Projects</h2>
+        <p><strong>Ph.D. Project:</strong> Experimental and Theoretical Study of Atmospheric Effects through Cosmic Ray Muons.</p>
+        <p><strong>Post-Master’s Project:</strong> Fabrication of Hydroelectric Cell – A Breakthrough Green Energy Innovation.</p>
+        <p><strong>Master’s Dissertation:</strong> Synthesis and Characterization of Perovskite Nanostructures.</p>
+      </section>
+    </div>
+  );
+};
 
-    <section>
-        <h2>Teaching Experience</h2>
-        <ul>
-            <li><strong>Applied Physics I & II:</strong> Hon. Senior Instructor, Dayalbagh Technical College, Agra</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:shivamkulsh96@gmail.com">shivamkulsh96@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/shivamkulshrestha">github.com/shivamkulshrestha</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/shivam-kulshrestha-4a6041109">linkedin.com/in/shivam-kulshrestha-4a6041109</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Shivam Kulshrestha | Hosted on GitHub Pages</p>
-    </footer>
-</body>
-</html>
+export default Portfolio;
