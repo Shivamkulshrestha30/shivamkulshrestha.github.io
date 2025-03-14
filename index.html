@@ -1,56 +1,155 @@
-import React from "react";
-
-const Portfolio = () => {
-  return (
-    <div className="max-w-4xl mx-auto p-6">
-      <h1 className="text-4xl font-bold text-center mb-6">Shivam In a Nutshell</h1>
-      
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold">How to Reach Me</h2>
-        <p>📧 Email: <a href="mailto:shivamkulsh96@gmail.com" className="text-blue-600">shivamkulsh96@gmail.com</a></p>
-        <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/shivam-kulshrestha-4a6041109" className="text-blue-600">Shivam Kulshrestha</a></p>
-      </section>
-      
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold">About Me</h2>
-        <p>
-          I am a Ph.D. student with a passion for teaching and making complex scientific concepts accessible to all. 
-          My research focuses on <strong>cosmic ray muons and atmospheric effects</strong>, particularly exploring high-energy cosmic ray interactions. 
-          I develop <strong>advanced data acquisition systems</strong> using <strong>Raspberry Pi and Arduino</strong> for cosmic ray detection.
-        </p>
-      </section>
-      
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold">Conferences & Presentations</h2>
-        <ul className="list-disc pl-6">
-          <li><strong>22nd ISVECRI 2024 (Mexico)</strong> - *Preliminary atmospheric effects through air showers at Agra using DEASA*</li>
-          <li><strong>XXVI DAE BRNS HEP Symposium (BHU)</strong> - *Comparative Analysis of Cosmic Ray Intensity Variation at DEASA*</li>
-          <li><strong>3rd Indian Space Weather Conference (IIT Roorkee)</strong> - *Unveiling Seasonal Impacts on Cosmic Rays*</li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Kulshrestha | Research Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            background: #444;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            padding: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #222;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .dark-mode {
+            background-color: #222;
+            color: white;
+        }
+        .toggle-button {
+            background: #444;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button class="toggle-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <header>
+        <h1>Shivam Kulshrestha</h1>
+        <p>Ph.D. Student | Experimental Physics | Cosmic Ray Research</p>
+        <p>📧 Email: shivamkulsh96@gmail.com | 🔗 LinkedIn: Shivam Kulshrestha</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#conferences">Conferences</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#workshops">Workshops</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-      </section>
-      
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold">Publications</h2>
-        <ul className="list-disc pl-6">
-          <li>Kulshrestha, S., & Bhatnagar, S. (2022). *Calibration and Weather Studies of DEASA Detectors.*</li>
-          <li>Bhatnagar, S., & Kulshrestha, S. (2024). *Shower Rates Measured at DEASA, Agra.*</li>
-          <li>Ahlers, M., et al. (2025). *Ideas and Requirements for the Global Cosmic-Ray Observatory (GCOS).*</li>
+    </nav>
+    
+    <section id="research">
+        <h2>Research Interests</h2>
+        <p>My research focuses on cosmic ray muons and atmospheric effects, particularly exploring high-energy cosmic ray interactions...</p>
+    </section>
+    
+    <section id="conferences">
+        <h2>Conferences & Presentations</h2>
+        <ul>
+            <li>ISVECRI 2024 - Preliminary atmospheric effects through air showers at Agra using DEASA</li>
+            <li>XXVI DAE BRNS Symposium - Comparative Analysis of Cosmic Ray Intensity Variation...</li>
+            <li>And more...</li>
         </ul>
-      </section>
-      
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold">Teaching Assignments</h2>
-        <p><strong>Applied Physics I & II</strong> – Hon. Senior Instructor, Dayalbagh Technical College, Agra.</p>
-      </section>
-      
-      <section>
-        <h2 className="text-2xl font-semibold">Projects</h2>
-        <p><strong>Ph.D. Project:</strong> Experimental and Theoretical Study of Atmospheric Effects through Cosmic Ray Muons.</p>
-        <p><strong>Post-Master’s Project:</strong> Fabrication of Hydroelectric Cell – A Breakthrough Green Energy Innovation.</p>
-        <p><strong>Master’s Dissertation:</strong> Synthesis and Characterization of Perovskite Nanostructures.</p>
-      </section>
-    </div>
-  );
-};
+    </section>
+    
+    <section id="publications">
+        <h2>Publications</h2>
+        <ul>
+            <li>Kulshrestha, Shivam, and Sonali Bhatnagar - Calibration and Weather Studies of DEASA Detectors...</li>
+            <li>Bhatnagar, Sonali, Shivam Kulshrestha - Study of Atmospheric Effects with Cosmic Muons...</li>
+        </ul>
+    </section>
+    
+    <section id="workshops">
+        <h2>Workshops Attended</h2>
+        <ul>
+            <li>GEANT4 Simulation, IUAC, New Delhi (2021)</li>
+            <li>Data Science School, Tirana (2022)</li>
+            <li>And more...</li>
+        </ul>
+    </section>
+    
+    <section id="teaching">
+        <h2>Teaching Assignments</h2>
+        <ul>
+            <li>Applied Physics I - Hon. Senior Instructor, 2024</li>
+            <li>Applied Physics II - Hon. Senior Instructor, 2025</li>
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Ph.D. Project: Experimental and Theoretical Study of Atmospheric Effects through Cosmic Ray Muons...</p>
+    </section>
+    
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Coming Soon! Future blogs on cosmic rays, data acquisition, and physics research.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>📧 Email: shivamkulsh96@gmail.com | 🔗 LinkedIn: Shivam Kulshrestha</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Shivam Kulshrestha | Research Portfolio</p>
+    </footer>
 
-export default Portfolio;
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
